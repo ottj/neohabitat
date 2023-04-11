@@ -475,10 +475,10 @@ function createServerConnection(port, host, client, immediate, context) {
             Trace.debug('Elko port disconnected...');
             if (client) {
                 Trace.debug("{Bridge being shutdown...}");
-                if (client.userName) {
-                    Users[client.userName].online = false;
-                }
-                client.end();
+                // if (client.userName) {
+                //     Users[client.userName].online = false;
+                // }
+                // client.end();
             }
         });
 
